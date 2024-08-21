@@ -38,7 +38,7 @@ body {
 
 /* Text styling */
 .text {
-  font-size: 6vw; /* Adjusted to be smaller */
+  font-size: 5vw; /* Adjusted to be smaller */
   font-weight: bold;
   font-family: myfont;
   color: #d0e0d1; /* Sehr helles, gedecktes Grün */
