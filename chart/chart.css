@@ -1,0 +1,14 @@
+body {
+  font-family: Georgia, serif;
+  font-weight: 500;
+}
+
+
+/* Style center-aligned text */
+.center-text {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  font-family: fraunces;
+}

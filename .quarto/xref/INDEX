@@ -1,0 +1,71 @@
+{
+  "index.qmd": {
+    "index.html": "2a858719"
+  },
+  "about.qmd": {
+    "about.html": "55053077"
+  },
+  "blog.qmd": {
+    "blog.html": "aa8c9016"
+  },
+  "blog/index.qmd": {
+    "index.html": "b2bcd515"
+  },
+  "blog/remit/index.qmd": {
+    "index.html": "2a002049"
+  },
+  "db.qmd": {
+    "db.html": "c1b1e6fa"
+  },
+  "charts.qmd": {
+    "charts.html": "def1c7e7"
+  },
+  "chart/charts.qmd": {
+    "charts.html": "c5ab7876"
+  },
+  "chart/pyramid/index.qmd": {
+    "index.html": "7c4d1c74"
+  },
+  "db/db.qmd": {
+    "db.html": "d7370a96"
+  },
+  "chart/remit/remit.qmd": {
+    "remit.html": "988c3be3"
+  },
+  "chart/remit/index.qmd": {
+    "index.html": "42f73bcd"
+  },
+  "chart/index.qmd": {
+    "index.html": "fbf05716"
+  },
+  "db/Population/index.qmd": {
+    "index.html": "0b2f8eaa"
+  },
+  "db/index.qmd": {
+    "index.html": "bcf19220"
+  },
+  "db/Population/pp.qmd": {
+    "pp.html": "ef3502e9"
+  },
+  "db/Population/test.qmd": {
+    "test.html": "2d35f45c"
+  },
+  "chart/egame/index.qmd": {
+    "index.html": "271b700a"
+  },
+  "chart/literacy/index.qmd": {
+    "index.html": "dbafb216"
+  },
+  "chart/trade/index.qmd": {
+    "index.html": "56e0c7ec"
+  },
+  "db/Remit/index.qmd": {
+    "index.html": "f374ba3b"
+  },
+  "chart/district-growthrate/index.qmd": {
+    "index.html": "baf9532b"
+  },
+  "chart/social-users/index.qmd": {
+    "index.html": "a037f7f0"
+  }
+}
