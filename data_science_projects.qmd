@@ -7,36 +7,96 @@ format:
 embed-resources: true
 ---
 
+### Smartphone data 
+The processing and visualisation of self-tracked smartphone data during a stay in Hamburg. A series of smartphone sensors were used for this, which were recorded using a tracking app and later processed for visualisation.
 
 
-::: {.grid}
+```{r, echo=FALSE, warning=FALSE}
+#| column: screen-inset-shaded
 
-::: {.g-col-4}
-![Image to data science project one](bilder/project_1.png){style="width: 100%; height: auto;"}
-\
-\
-![Image to data science project Two](bilder/project_1.png){style="width: 100%; height: auto;"}
-\
-\
-![Image to data science project Three](bilder/project_1.png){style="width: 100%; height: auto;"}
+# load library
+library(leaflet)
+
+# load data
+load("data/pre_processed_data")
+
+# run leaflet
+leaflet() %>% 
+  setView(lng = 9.970424082941788, lat =  53.553692067407596, zoom = 12) %>%
+  addTiles() %>% 
+  addMarkers(lng = c(gps_data_for_markers$lon),
+             lat = c(gps_data_for_markers$lat),
+             popup = paste0("<b>", "Location & Interval", "</b><br>", 
+                            "Start of the interval: ", gps_data_for_markers$start_date_time, 
+                            "<br>", "End of the interval: ", gps_data_for_markers$end_date_time,
+                            "<br>", "Activity: ", gps_data_for_markers$activity_type,
+                            "<br>", "Share of activity: ", gps_data_for_markers$percentage_activity,
+                            "<br>", "Steps: ", gps_data_for_markers$steps,
+                            "<br>", "Light: ", gps_data_for_markers$light_description,
+                            "<br>", "Share of Light: ", gps_data_for_markers$percentage_light,
+                            "<br>", "Weather: ", gps_data_for_markers$weather_description,
+                            "<br>", "Clouds: ", gps_data_for_markers$clouds,
+                            "<br>", "Temperature in Celsius: ", gps_data_for_markers$temperature,
+                            "<br>", "Feels like: ", gps_data_for_markers$feels_like,
+                            "<br>", "Humidity in %: ", gps_data_for_markers$humidity,
+                            "<br>", "Visibility: ", gps_data_for_markers$visibility,
+                            "<br>", "Wind speed in m/s: ", gps_data_for_markers$wind_speed),
+                 options = markerOptions()
+                 ) %>% 
+      addPolylines(
+        lng = c(gps_data_for_lines$lon),
+        lat = c(gps_data_for_lines$lat),
+        color = "darkblue",
+        weight = 2,
+        opacity = 0.7
+      )
+```
+
+::: {.callout-tip collapse="true"}
+
+## R-Code
+```{r, eval=FALSE}
+# load library
+library(leaflet)
+
+# load data
+load("data/pre_processed_data")
+
+# run leaflet
+leaflet() %>% 
+  # center map
+  setView(lng = 9.970424082941788, lat =  53.553692067407596, zoom = 12) %>%
+  # add tiles
+  addTiles() %>% 
+  # add descriptions
+  addMarkers(lng = c(gps_data_for_markers$lon),
+             lat = c(gps_data_for_markers$lat),
+             popup = paste0("<b>", "Location & Interval", "</b><br>", 
+                            "Start of the interval: ", gps_data_for_markers$start_date_time, 
+                            "<br>", "End of the interval: ", gps_data_for_markers$end_date_time,
+                            "<br>", "Activity: ", gps_data_for_markers$activity_type,
+                            "<br>", "Share of activity: ", gps_data_for_markers$percentage_activity,
+                            "<br>", "Steps: ", gps_data_for_markers$steps,
+                            "<br>", "Light: ", gps_data_for_markers$light_description,
+                            "<br>", "Share of Light: ", gps_data_for_markers$percentage_light,
+                            "<br>", "Weather: ", gps_data_for_markers$weather_description,
+                            "<br>", "Clouds: ", gps_data_for_markers$clouds,
+                            "<br>", "Temperature in Celsius: ", gps_data_for_markers$temperature,
+                            "<br>", "Feels like: ", gps_data_for_markers$feels_like,
+                            "<br>", "Humidity in %: ", gps_data_for_markers$humidity,
+                            "<br>", "Visibility: ", gps_data_for_markers$visibility,
+                            "<br>", "Wind speed in m/s: ", gps_data_for_markers$wind_speed),
+                 options = markerOptions()
+                 ) %>% 
+      addPolylines(
+        lng = c(gps_data_for_lines$lon),
+        lat = c(gps_data_for_lines$lat),
+        color = "darkblue",
+        weight = 2,
+        opacity = 0.7
+      )
+```
 :::
 
-::: {.g-col-8}
+**Note:** This page is still a work in progress. I will add more data science projects in the future.
 
-**WORK IN PROGRESS**
-
-### Data Science Project One 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas cursus lectus rutrum netus consectetur efficitur. Dignissim diam sollicitudin arcu; consequat mattis ipsum pretium. Tellus felis eleifend fringilla adipiscing nunc magnis habitasse urna. Viverra massa elementum; aliquet tristique non lacinia risus mi. Fringilla aliquam nibh est lacus at ad ac. Per dictum vitae senectus et imperdiet semper laoreet laoreet curae. Mi justo neque tempor libero turpis iaculis, sociosqu curabitur. Donec dolor ridiculus a sollicitudin cras magna neque?
-\
-\
-
-### Data Science Project Two 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas cursus lectus rutrum netus consectetur efficitur. Dignissim diam sollicitudin arcu; consequat mattis ipsum pretium. Tellus felis eleifend fringilla adipiscing nunc magnis habitasse urna. Viverra massa elementum; aliquet tristique non lacinia risus mi. Fringilla aliquam nibh est lacus at ad ac. Per dictum vitae senectus et imperdiet semper laoreet laoreet curae. Mi justo neque tempor libero turpis iaculis, sociosqu curabitur. Donec dolor ridiculus a sollicitudin cras magna neque?
-\
-\
-
-### Data Science Project Three 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas cursus lectus rutrum netus consectetur efficitur. Dignissim diam sollicitudin arcu; consequat mattis ipsum pretium. Tellus felis eleifend fringilla adipiscing nunc magnis habitasse urna. Viverra massa elementum; aliquet tristique non lacinia risus mi. Fringilla aliquam nibh est lacus at ad ac. Per dictum vitae senectus et imperdiet semper laoreet laoreet curae. Mi justo neque tempor libero turpis iaculis, sociosqu curabitur. Donec dolor ridiculus a sollicitudin cras magna neque?
-:::
-
-:::
