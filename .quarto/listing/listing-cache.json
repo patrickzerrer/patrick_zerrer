@@ -12,6 +12,9 @@
     "db\\index.qmd": [
       "index.qmd",
       "**/index.qmd"
+    ],
+    "data_science_projects.qmd": [
+      "data_science_projects.qmd"
     ]
   }
 }

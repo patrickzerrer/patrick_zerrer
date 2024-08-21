@@ -1,26 +1,39 @@
 ---
-title:  <p class="center-text">Contact Us</p>
-sidebar: false
+format: html
 page-layout: full
-toc: false
 ---
 
-- **LinkedIn:** [Vistales](https://linkedin.com/company/vistales)
-
-- **X:** [@vistales_](https://twitter.com/vistales_)
-
-- **Instagram:** [@vistales_](https://instagram.com/vistales_)
-
-
 <style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a6e4f; /* Hintergrundfarbe anpassen, falls benötigt */
+    font-family: Georgia, sans-serif;
+  }
 
+  .center-text {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+  }
 
-.center-text {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  color: black;
-  font-family: fraunces;
-}
+  a {
+    color: #d0e0d1; /* Linkfarbe anpassen */
+    text-decoration: none; /* Entfernen der Unterstreichung */
+  }
 
+  a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+  }
 </style>
+
+<div class="center-text">
+  <h1>Contact me</h1>
+  <p><strong>E-Mail:</strong> pzerrer[at]uni-bremen.de</p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/patrick-zerrer-205b422a7" target="_blank">Patrick Zerrer</a></p>
+  <p><strong>University Website:</strong> <a href="https://zemki.uni-bremen.de/person/patrick-zerrer/" target="_blank">Uni Bremen - ZeMKI</a></p>
+</div>

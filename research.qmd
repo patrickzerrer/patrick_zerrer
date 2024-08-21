@@ -1,0 +1,44 @@
+---
+page-layout: full
+format: 
+  html:
+    link-external-newwindow: true
+    css: styles.css
+embed-resources: true
+image: bilder/data_science_3.png
+about:
+  template: trestles
+  image-width: 20em
+  image-shape: round
+---
+
+## Research interests
+
+In my research, I focus primarily on the utilization of digital trace data for research into political discourse, public opinion-forming and the (political) use of information. To this end, I primarily use passive measurement via smartphone tracking, surveys and automated content analysis.
+
+- Digital and mobile news & information usage
+
+- Analysis and evaluation of (mobile) tracking data
+
+- (Climate) protest in a digital media environment
+
+## Research projects
+
+I have been involved in a number of research projects, including...
+
+- [AMBITION](https://zemki.uni-bremen.de/en/forschungsprojekt/ambition-activists-mobile-information-2/) (completed): The AMBITION project is a scientific pilot study on the news and media usage behavior of Fridays for Future supporters
+- [POLTRACK](https://zemki.uni-bremen.de/en/forschungsprojekt/political-polarization-and-individualized-online-information-environments-a-longitudinal-tracking-study-poltrack-3/) (ongoing): The POLTRACK project examines the news consumption of Germans over a longer period of time in order to be able to make statements about the formation of political opinion and the polarization of society.
+- [INDI](https://zemki.uni-bremen.de/en/forschungsprojekt/indi-en/) (ongoing): The project Informed by Influencers (INDI) focusses on the way in which knowledge relevant to climate change is disseminated and consumed on social networks. The aim is to determine the proportion of social media posts on this topic and to examine the behaviour of users. 
+
+## Teaching
+
+- Introduction to quantitative research designs and data analysis (seminar)
+
+- Design and implementation of an online survey (seminar)
+
+- Collaboration in the redesign of the teaching module and publication of the online textbook [“Introduction to quantitative research designs and data analysis”](https://patrickzerrer.github.io/R_Hands_on_Book/) as part of the SKILL project
+
+## Publications
+
+Please visit my [ORCID page](https://orcid.org/0000-0002-8827-1336) for the complete and most up-to-date list of my publications. 
+ 

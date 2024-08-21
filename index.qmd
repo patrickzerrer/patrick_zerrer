@@ -7,10 +7,10 @@ format:
 embed-resources: true
 ---
 <div class="container">
-  <div class="text text-left" id="text-left">Visual</div>
-  <div class="text text-right" id="text-right">Tales</div>
-  <div class="text" id="combined">Vistales</div>
-  <div class="mini" id="after">Pakistan’s Data Insights: Unveiling the Stories Behind Numbers</div>
+  <div class="text text-left" id="text-left">Data</div>
+  <div class="text text-right" id="text-right">Science</div>
+  <div class="text" id="combined">Patrick Zerrer</div>
+  <div class="mini" id="after">Searching for and finding the stories behind the data</div>
 </div>
 
 

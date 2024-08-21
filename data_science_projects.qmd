@@ -1,0 +1,42 @@
+---
+page-layout: full
+format: 
+  html:
+    link-external-newwindow: true
+    css: styles.css
+embed-resources: true
+---
+
+
+
+::: {.grid}
+
+::: {.g-col-4}
+![Image to data science project one](bilder/project_1.png){style="width: 100%; height: auto;"}
+\
+\
+![Image to data science project Two](bilder/project_1.png){style="width: 100%; height: auto;"}
+\
+\
+![Image to data science project Three](bilder/project_1.png){style="width: 100%; height: auto;"}
+:::
+
+::: {.g-col-8}
+
+**WORK IN PROGRESS**
+
+### Data Science Project One 
+Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas cursus lectus rutrum netus consectetur efficitur. Dignissim diam sollicitudin arcu; consequat mattis ipsum pretium. Tellus felis eleifend fringilla adipiscing nunc magnis habitasse urna. Viverra massa elementum; aliquet tristique non lacinia risus mi. Fringilla aliquam nibh est lacus at ad ac. Per dictum vitae senectus et imperdiet semper laoreet laoreet curae. Mi justo neque tempor libero turpis iaculis, sociosqu curabitur. Donec dolor ridiculus a sollicitudin cras magna neque?
+\
+\
+
+### Data Science Project Two 
+Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas cursus lectus rutrum netus consectetur efficitur. Dignissim diam sollicitudin arcu; consequat mattis ipsum pretium. Tellus felis eleifend fringilla adipiscing nunc magnis habitasse urna. Viverra massa elementum; aliquet tristique non lacinia risus mi. Fringilla aliquam nibh est lacus at ad ac. Per dictum vitae senectus et imperdiet semper laoreet laoreet curae. Mi justo neque tempor libero turpis iaculis, sociosqu curabitur. Donec dolor ridiculus a sollicitudin cras magna neque?
+\
+\
+
+### Data Science Project Three 
+Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas cursus lectus rutrum netus consectetur efficitur. Dignissim diam sollicitudin arcu; consequat mattis ipsum pretium. Tellus felis eleifend fringilla adipiscing nunc magnis habitasse urna. Viverra massa elementum; aliquet tristique non lacinia risus mi. Fringilla aliquam nibh est lacus at ad ac. Per dictum vitae senectus et imperdiet semper laoreet laoreet curae. Mi justo neque tempor libero turpis iaculis, sociosqu curabitur. Donec dolor ridiculus a sollicitudin cras magna neque?
+:::
+
+:::

@@ -7,7 +7,7 @@ website:
     style: simple
     palette: dark
   google-analytics:
-    tracking-id: "G-X7Q4RX6KPB"
+    tracking-id: ""
     anonymize-ip: true
 
   navbar:
@@ -16,25 +16,21 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: db/index.qmd
-        text: Dashboards
-      - href: chart/index.qmd
-        text: Charts
-      - href: blog/index.qmd
-        text: Stories
+      - href: cv.qmd
+        text: Vita
+      - href: research.qmd
+        text: Research
+      - href: data_science_projects.qmd
+        text: Data Science Projects
       - href: about.qmd
         text: Contact
   page-footer: 
     background: "transparent"
-    foreground: "black"
+    foreground: "white"
     left: "Copyright 2024" 
     right: 
       - icon: linkedin
-        href: https://linkedin.com/company/vistales
-      - icon: twitter 
-        href: https://twitter.com/vistales_ 
-      - icon: instagram
-        href: https://instagram.com/vistales_     
+        href: www.linkedin.com/in/patrick-zerrer-205b422a7
   
 format:
   html:

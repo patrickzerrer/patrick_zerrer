@@ -8,43 +8,25 @@
   src: url('fraunces.ttf') format('truetype'); /* Ensure the path and format are correct */
 }
 
-/* Gradient background animation */
-@keyframes gradientBackground {
-  0% {
-    background: linear-gradient(125deg, #F9CEDC 0%, #fad0c4 100%);
-  }
-  35% {
-    background: linear-gradient(25deg, #E4E4F5 0%, #fbc2eb 100%);
-  }
-  50% {
-    background: linear-gradient(25deg, #fad0c4 0%, #ffd1ff 100%);
-  }
-  75% {
-    background: linear-gradient(25deg, #CEE9F9 0%, #fbc2eb 100%);
-  }
-  100% {
-    background: linear-gradient(65deg, #E8EEC5 0%, #fad0c4 100%);
-  }
-}
-
-/* Apply the gradient animation to the body */
+/* Apply a solid background color to the body */
 body {
   margin: 0;
   height: 100vh;
   font-family: Georgia, Sans-Serif;
-  justify-content: center;
-  align-items: center;
-  animation: gradientBackground 30s linear infinite;
+  background-color: #4a6e4f; /* Helles, gedecktes Waldgrün als Hintergrundfarbe */
+  color: white; /* Set all text to white */
 }
 
-
+/* Styling for the first section */
 .first {
   margin-top: 50%;
   width: 100%;
   height: 100%;
-  background-color: beige;
+  background-color: #3c5d46; /* Helles, gedecktes Waldgrün */
+  color: white; /* Ensure text in this section is white */
 }
 
+/* Container styling */
 .container {
   position: relative;
   width: 100%;
@@ -54,36 +36,30 @@ body {
   align-items: center;
 }
 
+/* Text styling */
 .text {
-  font-size: 12vw;
+  font-size: 6vw; /* Adjusted to be smaller */
   font-weight: bold;
   font-family: myfont;
-  color: black;
+  color: #d0e0d1; /* Sehr helles, gedecktes Grün */
   position: absolute;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
 }
 
-
+/* Mini text styling */
 .mini {
   font-family: myfont;
-  font-size: 2vw;
+  font-size: 1.5vw; /* Adjusted to be smaller */
   font-weight: light;
-  color: black;
+  color: #a3b9a4; /* Mittelhelles, gedecktes Grün */
   position: relative;
   top: 180px;
   text-align: justify-content;
 }
 
-.text-left {
-  animation-name: textLeft;
-}
-
-.text-right {
-  animation-name: textRight;
-}
-
+/* Keyframe animations for text movement */
 @keyframes textLeft {
   0% {
     left: -50%;
@@ -98,23 +74,26 @@ body {
    0% {
     right: -50%;
   }
-
- 
   100% {
     right: 20%;
     transform: translateX(50%);
   }
 }
 
-#combined {
+.text-left {
+  animation-name: textLeft;
+}
+
+.text-right {
+  animation-name: textRight;
+}
+
+/* Hidden elements */
+#combined, #after {
   display: none;
 }
 
-#after{
-  display: none;
-}
-
-
+/* Keyframe animations for text visibility */
 @keyframes combineText {
   0% {
     opacity: 0;
@@ -132,8 +111,6 @@ body {
   animation: combineText 1s forwards;
 }
 
-
-
 @keyframes afterText {
   0% {
     opacity: 0;
@@ -146,45 +123,86 @@ body {
   }
 }
 
-
 #after.show {
   display: block;
   animation: afterText 4s backwards;
 }
 
-
-
-
-/* navbar */.navbar-title {  font-family: Sans-Serif;}
+/* Navbar styling */
+.navbar-title {  
+  font-family: Sans-Serif;
+  color: white; /* Navbar title in white */
+}
 
 .navbar-dark .navbar-brand {
   text-align: right;
+  color: white; /* Navbar brand text in white */
 }
 
-
-.navbar-nav{
+.navbar-nav {
   margin-right: 50px;
   margin-left: 50px;
-  
-  /* Adjust the value as needed */
 }
 
-.navbar-nav .nav-item{
+.navbar-nav .nav-item {
   padding-left: 10px;
   padding-right: 10px;
   font-family: Georgia, serif;
   font-size: 20px;
-} 
+  color: white; /* Navbar items in white */
+}
 
-
+/* Footer styling */
 .footer {
   width: 100%;
   text-align: center;
   position: fixed;
   bottom: 0;
   font-family: Georgia, serif;
+  color: white; /* Footer text in white */
+  background-color: #4a6e4f; /* Hintergrundfarbe des Footers auf helles, gedecktes Waldgrün */
 }
 
 .page-footer-title {
   font-family: Sans-Serif;
+  color: white; /* Footer title in white */
+}
+
+/* Link styling */
+a:link {
+  color: #d0e0d1; /* Sehr helles, gedecktes Grün */
+  text-decoration: none; /* Entfernt die Standardunterstreichung */
+}
+
+a:visited {
+  color: #a3b9a4; /* Mittelhelles, gedecktes Grün */
+}
+
+a:hover {
+  color: #d0e0d1; /* Beibehaltung der Farbe beim Hover */
+  background-color: #3c5d46; /* Setzt den Hintergrund beim Hover auf ein helles, gedecktes Grün */
+  text-decoration: underline; /* Optional: Unterstreicht den Link beim Hover */
+}
+
+a:active {
+  color: #d0e0d1; /* Setzt die Farbe beim Klicken auf sehr helles, gedecktes Grün */
+  background-color: #4a6e4f; /* Setzt den Hintergrund beim Klicken auf helles, gedecktes Waldgrün */
+}
+
+a:focus {
+  color: #d0e0d1 !important; /* Verhindert das Auftreten der blauen Farbe beim Klicken */
+  background-color: #4a6e4f !important; /* Gleicher Hintergrund wie beim aktiven Link */
+}
+
+/* Active state for navbar items */
+.navbar-nav .nav-item.active, 
+.navbar-nav .nav-link.active {
+  color: #d0e0d1 !important; /* Textfarbe des aktiven Links auf sehr helles, gedecktes Grün */
+  background-color: #4a6e4f !important; /* Hintergrundfarbe des aktiven Links auf helles, gedecktes Waldgrün */
+}
+
+/* Hover state for navbar items */
+.navbar-nav .nav-item:hover, 
+.navbar-nav .nav-link:hover {
+  color: #a3b9a4 !important; /* Setzt die Textfarbe beim Hover auf mittelhelles, gedecktes Grün */
 }
