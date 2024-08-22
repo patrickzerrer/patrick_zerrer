@@ -29,6 +29,29 @@ page-layout: full
   a:hover {
     text-decoration: underline; /* Unterstreichung beim Hover */
   }
+  .navbar {
+    background-color: #4a6e4f !important; /* Hintergrundfarbe für die Navbar */
+    color: #e2f0e2 !important; /* Schriftfarbe für die Navbar */
+  }
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-family: Georgia, serif;
+    background-color: #4a6e4f !important; /* Hintergrundfarbe für den Footer */
+    color: #e2f0e2 !important; /* Schriftfarbe für den Footer */
+  }
+  
+  /* Optionale Anpassungen für Links innerhalb der Navbar und Footer */
+  .navbar a, .footer a {
+    color: #e2f0e2 !important; /* Schriftfarbe für Links */
+  }
+  
+  .navbar a:hover, .footer a:hover {
+    color: #d1e5d1 !important; /* Schriftfarbe beim Hover */
+  }
 </style>
 
 <div class="center-text">

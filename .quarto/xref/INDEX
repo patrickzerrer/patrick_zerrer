@@ -76,5 +76,14 @@
   },
   "cv.qmd": {
     "cv.html": "4982bb0d"
+  },
+  "vita.qmd": {
+    "vita.html": "70a083c5"
+  },
+  "contact.qmd": {
+    "contact.html": "c82b45a6"
+  },
+  "projects.qmd": {
+    "projects.html": "99a735e4"
   }
 }

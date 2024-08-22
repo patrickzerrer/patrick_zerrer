@@ -8,7 +8,7 @@ embed-resources: true
 ---
 
 ### Smartphone data 
-The processing and visualisation of self-tracked smartphone data during a stay in Hamburg. A series of smartphone sensors were used for this, which were recorded using a tracking app and later processed for visualisation.
+The processing and visualization of self-tracked smartphone data during a stay in Hamburg. A series of smartphone sensors were used for this, which were recorded using a tracking app and later processed for visualization.
 
 
 ```{r, echo=FALSE, warning=FALSE}

@@ -6,27 +6,65 @@ format:
     css: styles.css
 embed-resources: true
 ---
-<div class="container">
-  <div class="text text-left" id="text-left">Data</div>
-  <div class="text text-right" id="text-right">Scientist</div>
-  <div class="text" id="combined">Patrick Zerrer</div>
-  <div class="mini" id="after">Finding the stories behind the data</div>
-</div>
 
+<div class="name">Patrick Zerrer</div>
+<div class="title-container">
+  <div class="title title1">Data</div>
+  <div class="title title2">Scientist</div>
+</div>
+<div class="slogan">Finding the stories behind the data</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const leftText = document.getElementById('text-left');
-    const rightText = document.getElementById('text-right');
-    const combinedText = document.getElementById('combined');
-    const afterText = document.getElementById('after');
-
-    // When the right text animation ends, hide both texts and show the combined text
-    rightText.addEventListener('animationend', function() {
-      leftText.style.display = 'none';
-      rightText.style.display = 'none';
-      combinedText.classList.add('show');
-      afterText.classList.add('show');
-    });
+      setTimeout(function() {
+          document.querySelector('.title1').style.transform = 'translateX(0)';
+          document.querySelector('.title1').style.opacity = '1';
+      }, 500);
+  
+      setTimeout(function() {
+          document.querySelector('.title2').style.transform = 'translateX(0)';
+          document.querySelector('.title2').style.opacity = '1';
+      }, 1000);
+  
+      setTimeout(function() {
+          document.querySelector('.slogan').style.opacity = '1';
+          document.querySelector('.slogan').style.transform = 'translateY(0)';
+      }, 2000);
   });
 </script>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a6e4f; /* Hintergrundfarbe anpassen, falls benötigt */
+    font-family: Georgia, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #4a6e4f !important; /* Hintergrundfarbe für die Navbar */
+    color: #e2f0e2 !important; /* Schriftfarbe für die Navbar */
+  }
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-family: Georgia, serif;
+    background-color: #4a6e4f !important; /* Hintergrundfarbe für den Footer */
+    color: #e2f0e2 !important; /* Schriftfarbe für den Footer */
+  }
+  
+  /* Optionale Anpassungen für Links innerhalb der Navbar und Footer */
+  .navbar a, .footer a {
+    color: #e2f0e2 !important; /* Schriftfarbe für Links */
+  }
+  
+  .navbar a:hover, .footer a:hover {
+    color: #d1e5d1 !important; /* Schriftfarbe beim Hover */
+  }
+</style>
