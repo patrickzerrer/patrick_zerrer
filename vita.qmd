@@ -14,16 +14,16 @@ about:
 
 ## Vita
 
-Patrick Zerrer has been working as a research assistant at the Center for Media, Communication and Information Research since April 2020. In the Laboratory for Digital Communication and Information Diversity, under the direction of Prof. Dr. Cornelius Puschmann, he is dedicated to the systematic investigation of digital media use using quantitative and automated methods (CSS, R, scraping, mobile tracking, etc.).
+I have been working as a research assistant at the Centre for Media, Communication and Information Research [(ZeMKI)](https://zemki.uni-bremen.de/) at the University of Bremen since April 2020. In the Laboratory for Digital Communication and Information Diversity under the direction of Prof. Dr Cornelius Puschmann, I am dedicated to the systematic investigation of digital media use using quantitative and automated methods (CSS, R, scraping, mobile tracking, etc.).
 
-From December 2017 to February 2020, Patrick Zerrer worked as an assistant at the Institute of Communication Science in Jena as part of a DFG project. The research project focused on the investigation of deliberative interactions in online user comments. In his role as a research assistant, Patrick actively supported the data collection and analysis.
+From December 2017 to February 2020, I worked as a research assistant at the Institute of Communication Science in Jena as part of a DFG project. The research project focused on the investigation of deliberative interactions in online user comments. In my role as a student assistant, Patrick Zerrer actively supported the data collection and analysis.
 
-Prior to his current position, Patrick earned his Master of Arts in Public Communication at the Friedrich Schiller University Jena from October 2017 to February 2020. He deepened his interest in social, sociological and political topics during his studies at the University of Passau, where he studied Governance and Public Policy – Political Science from September 2013 to September 2017 and graduated with a Bachelor of Arts.
+Before that, I completed my Master of Arts in Public Communication at the Friedrich Schiller University Jena from October 2017 to February 2020. I had already deepened my interest in social, sociological and political topics during my studies at the University of Passau, where I studied Governance and Public Policy - Political Science from September 2013 to September 2017 and graduated with a Bachelor of Arts.
 
 ## Curriculum Vitae
  
 Since April 2020 \
-**Centre for Media, Communication and Information Research (ZeMKI)** \
+**University of Bremen - Centre for Media, Communication and Information Research (ZeMKI)** \
 *Research associate* \
 Lab: Digital communication and information diversity \
 
