@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Patrick Zerrer\n\n\n\nData\n\n\nScientist\n\n\n\nFinding the stories behind the data"
+    "text": "Patrick Zerrer\n\n\n\nData\n\n\nScientist\n\n\n\nFinding the stories behind the data\n\n\n  Vita    Research    Data Science Projects"
   },
   {
     "objectID": "about.html",
@@ -110,5 +110,12 @@
     "title": "",
     "section": "",
     "text": "Smartphone data\nThe processing and visualization of self-tracked smartphone data during a stay in Hamburg. A series of smartphone sensors were used for this, which were recorded using a tracking app and later processed for visualization.\n\n\n\n\n\n\n\n\n\n\n\n\nR-Code\n\n\n\n\n\n\n# load library\nlibrary(leaflet)\n\n# load data\nload(\"data/pre_processed_data\")\n\n# run leaflet\nleaflet() %&gt;% \n  # center map\n  setView(lng = 9.970424082941788, lat =  53.553692067407596, zoom = 12) %&gt;%\n  # add tiles\n  addTiles() %&gt;% \n  # add descriptions\n  addMarkers(lng = c(gps_data_for_markers$lon),\n             lat = c(gps_data_for_markers$lat),\n             popup = paste0(\"&lt;b&gt;\", \"Location & Interval\", \"&lt;/b&gt;&lt;br&gt;\", \n                            \"Start of the interval: \", gps_data_for_markers$start_date_time, \n                            \"&lt;br&gt;\", \"End of the interval: \", gps_data_for_markers$end_date_time,\n                            \"&lt;br&gt;\", \"Activity: \", gps_data_for_markers$activity_type,\n                            \"&lt;br&gt;\", \"Share of activity: \", gps_data_for_markers$percentage_activity,\n                            \"&lt;br&gt;\", \"Steps: \", gps_data_for_markers$steps,\n                            \"&lt;br&gt;\", \"Light: \", gps_data_for_markers$light_description,\n                            \"&lt;br&gt;\", \"Share of Light: \", gps_data_for_markers$percentage_light,\n                            \"&lt;br&gt;\", \"Weather: \", gps_data_for_markers$weather_description,\n                            \"&lt;br&gt;\", \"Clouds: \", gps_data_for_markers$clouds,\n                            \"&lt;br&gt;\", \"Temperature in Celsius: \", gps_data_for_markers$temperature,\n                            \"&lt;br&gt;\", \"Feels like: \", gps_data_for_markers$feels_like,\n                            \"&lt;br&gt;\", \"Humidity in %: \", gps_data_for_markers$humidity,\n                            \"&lt;br&gt;\", \"Visibility: \", gps_data_for_markers$visibility,\n                            \"&lt;br&gt;\", \"Wind speed in m/s: \", gps_data_for_markers$wind_speed),\n                 options = markerOptions()\n                 ) %&gt;% \n      addPolylines(\n        lng = c(gps_data_for_lines$lon),\n        lat = c(gps_data_for_lines$lat),\n        color = \"darkblue\",\n        weight = 2,\n        opacity = 0.7\n      )\n\n\n\n\nNote: This page is still a work in progress. I will add more data science projects in the future."
+  },
+  {
+    "objectID": "index.html#to-dos",
+    "href": "index.html#to-dos",
+    "title": "",
+    "section": "To Dos",
+    "text": "To Dos\nIcons ändern Research = lightbulb Vita = dickere linien nebeneinander fixen"
   }
 ]
