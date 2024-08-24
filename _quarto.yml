@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  favicon: Bilder/favicon-32x32.png
+  favicon: bilder/favicon-32x32.png
   cookie-consent:
     type: express
     style: simple
@@ -16,7 +16,7 @@ website:
     background: "transparent"
     foreground: "#5b8b6e"
     right:
-      - href: index.qmd
+      - href: patrick_zerrer.qmd
         text: Home
       - href: vita.qmd
         text: Vita
