@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Patrick Zerrer\n\n\n\nData\n\n\nScientist\n\n\n\nFinding the stories behind the data\n\n\n  Vita    Research    Data Science Projects"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "\nContact me\n",
+    "section": "",
+    "text": "Contact me\n\n\nE-Mail: pzerrer[at]uni-bremen.de\n\n\nLinkedIn: Patrick Zerrer\n\n\nUniversity Website: Uni Bremen - ZeMKI\n\n\n\n\nImpressum\n\n\nPatrick Zerrer Linzer Strasse 4 28359 Bremen Deutschland\n\n\nE-Mail: pzerrer[at]uni-bremen.de"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "",
+    "section": "",
+    "text": "Smartphone data\nThe processing and visualization of self-tracked smartphone data during a stay in Hamburg. A series of smartphone sensors were used for this, which were recorded using a tracking app and later processed for visualization.\n\n\n\n\n\n\n\n\n\n\n\n\nR-Code\n\n\n\n\n\n\n# load library\nlibrary(leaflet)\n\n# load data\nload(\"data/pre_processed_data\")\n\n# run leaflet\nleaflet() %&gt;% \n  # center map\n  setView(lng = 9.970424082941788, lat =  53.553692067407596, zoom = 12) %&gt;%\n  # add tiles\n  addTiles() %&gt;% \n  # add descriptions\n  addMarkers(lng = c(gps_data_for_markers$lon),\n             lat = c(gps_data_for_markers$lat),\n             popup = paste0(\"&lt;b&gt;\", \"Location & Interval\", \"&lt;/b&gt;&lt;br&gt;\", \n                            \"Start of the interval: \", gps_data_for_markers$start_date_time, \n                            \"&lt;br&gt;\", \"End of the interval: \", gps_data_for_markers$end_date_time,\n                            \"&lt;br&gt;\", \"Activity: \", gps_data_for_markers$activity_type,\n                            \"&lt;br&gt;\", \"Share of activity: \", gps_data_for_markers$percentage_activity,\n                            \"&lt;br&gt;\", \"Steps: \", gps_data_for_markers$steps,\n                            \"&lt;br&gt;\", \"Light: \", gps_data_for_markers$light_description,\n                            \"&lt;br&gt;\", \"Share of Light: \", gps_data_for_markers$percentage_light,\n                            \"&lt;br&gt;\", \"Weather: \", gps_data_for_markers$weather_description,\n                            \"&lt;br&gt;\", \"Clouds: \", gps_data_for_markers$clouds,\n                            \"&lt;br&gt;\", \"Temperature in Celsius: \", gps_data_for_markers$temperature,\n                            \"&lt;br&gt;\", \"Feels like: \", gps_data_for_markers$feels_like,\n                            \"&lt;br&gt;\", \"Humidity in %: \", gps_data_for_markers$humidity,\n                            \"&lt;br&gt;\", \"Visibility: \", gps_data_for_markers$visibility,\n                            \"&lt;br&gt;\", \"Wind speed in m/s: \", gps_data_for_markers$wind_speed),\n                 options = markerOptions()\n                 ) %&gt;% \n      addPolylines(\n        lng = c(gps_data_for_lines$lon),\n        lat = c(gps_data_for_lines$lat),\n        color = \"darkblue\",\n        weight = 2,\n        opacity = 0.7\n      )\n\n\n\n\nNote: This page is still a work in progress. I will add more data science projects in the future."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "",
+    "section": "",
+    "text": "In my research, I focus primarily on the utilization of digital trace data for research into political discourse, public opinion-forming and the (political) use of information. To this end, I primarily use passive measurement via smartphone tracking, surveys and automated content analysis.\n\nDigital and mobile news & information usage\nAnalysis and evaluation of (mobile) tracking data\n(Climate) protest in a digital media environment"
+  },
+  {
+    "objectID": "research.html#research-interests",
+    "href": "research.html#research-interests",
+    "title": "",
+    "section": "",
+    "text": "In my research, I focus primarily on the utilization of digital trace data for research into political discourse, public opinion-forming and the (political) use of information. To this end, I primarily use passive measurement via smartphone tracking, surveys and automated content analysis.\n\nDigital and mobile news & information usage\nAnalysis and evaluation of (mobile) tracking data\n(Climate) protest in a digital media environment"
+  },
+  {
+    "objectID": "research.html#research-projects",
+    "href": "research.html#research-projects",
+    "title": "",
+    "section": "Research projects",
+    "text": "Research projects\nI have been involved in a number of research projects, including…\n\nAMBITION (completed): The AMBITION project is a scientific pilot study on the news and media usage behavior of Fridays for Future supporters\nPOLTRACK (ongoing): The POLTRACK project examines the news consumption of Germans over a longer period of time in order to be able to make statements about the formation of political opinion and the polarization of society.\nINDI (ongoing): The project Informed by Influencers (INDI) focusses on the way in which knowledge relevant to climate change is disseminated and consumed on social networks. The aim is to determine the proportion of social media posts on this topic and to examine the behaviour of users."
+  },
+  {
+    "objectID": "research.html#teaching",
+    "href": "research.html#teaching",
+    "title": "",
+    "section": "Teaching",
+    "text": "Teaching\n\nIntroduction to quantitative research designs and data analysis (seminar)\nDesign and implementation of an online survey (seminar)\nCollaboration in the redesign of the teaching module and publication of the online textbook “Introduction to quantitative research designs and data analysis” as part of the SKILL project"
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "",
+    "section": "Publications",
+    "text": "Publications\nPlease visit my ORCID page for the complete and most up-to-date list of my publications."
+  },
+  {
+    "objectID": "vita.html",
+    "href": "vita.html",
+    "title": "",
+    "section": "",
+    "text": "I have been working as a research assistant at the Centre for Media, Communication and Information Research (ZeMKI) at the University of Bremen since April 2020. In the Laboratory for Digital Communication and Information Diversity under the direction of Prof. Dr Cornelius Puschmann, I am dedicated to the systematic investigation of digital media use using quantitative and automated methods (CSS, R, scraping, mobile tracking, etc.).\nFrom December 2017 to February 2020, I worked as a research assistant at the Institute of Communication Science in Jena as part of a DFG project. The research project focused on the investigation of deliberative interactions in online user comments. In my role as a student assistant, I actively supported the data collection and analysis.\nBefore that, I completed my Master of Arts in Public Communication at the Friedrich Schiller University Jena from October 2017 to February 2020. I had already deepened my interest in social, sociological and political topics during my studies at the University of Passau, where I studied Governance and Public Policy - Political Science from September 2013 to September 2017 and graduated with a Bachelor of Arts."
+  },
+  {
+    "objectID": "vita.html#vita",
+    "href": "vita.html#vita",
+    "title": "",
+    "section": "",
+    "text": "I have been working as a research assistant at the Centre for Media, Communication and Information Research (ZeMKI) at the University of Bremen since April 2020. In the Laboratory for Digital Communication and Information Diversity under the direction of Prof. Dr Cornelius Puschmann, I am dedicated to the systematic investigation of digital media use using quantitative and automated methods (CSS, R, scraping, mobile tracking, etc.).\nFrom December 2017 to February 2020, I worked as a research assistant at the Institute of Communication Science in Jena as part of a DFG project. The research project focused on the investigation of deliberative interactions in online user comments. In my role as a student assistant, I actively supported the data collection and analysis.\nBefore that, I completed my Master of Arts in Public Communication at the Friedrich Schiller University Jena from October 2017 to February 2020. I had already deepened my interest in social, sociological and political topics during my studies at the University of Passau, where I studied Governance and Public Policy - Political Science from September 2013 to September 2017 and graduated with a Bachelor of Arts."
+  },
+  {
+    "objectID": "vita.html#curriculum-vitae",
+    "href": "vita.html#curriculum-vitae",
+    "title": "",
+    "section": "Curriculum Vitae",
+    "text": "Curriculum Vitae\nSince April 2020\nUniversity of Bremen - Centre for Media, Communication and Information Research (ZeMKI)\nResearch associate\nLab: Digital communication and information diversity\n\nOctober 2017 until February 2020\nFriedrich Schiller University Jena\nMaster’s degree in Public Communication, Master of Arts\n\nSeptember 2013 until September 2017\nUniversity of Passau\nStudy programme in the field of Governance and Public Policy - Political Science, Bachelor of Arts degree"
+  }
+]
