@@ -16,7 +16,7 @@ website:
     background: "transparent"
     foreground: "#5b8b6e"
     right:
-      - href: patrick_zerrer.qmd
+      - href: index.qmd
         text: Home
       - href: vita.qmd
         text: Vita
