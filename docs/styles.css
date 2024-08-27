@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 @font-face {
   font-family: "myfont";
   src: url('gb.ttf') format('truetype'); /* Ensure the path and format are correct */
@@ -8,14 +10,12 @@
   src: url('fraunces.ttf') format('truetype'); /* Ensure the path and format are correct */
 }
 
-/* Apply a solid background color to the body */
 body {
   margin: 0;
   height: 100vh;
-  font-family: Georgia, Sans-Serif;
-  background-color: #e2f0e2; /* Helles, gedecktes Waldgrün als Hintergrundfarbe */
-  color: black; /* Set all text to black */
-  
+  font-family: "Fjalla One", sans-serif; /* Updated to use Fjalla One */
+  background-color: #e2f0e2;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@ body {
 
 /* Standard Navbar-Stil (allgemein) */
 .navbar {
-  background-color: #e2f0e2; /* Standard Hintergrundfarbe für die Navbar */
+  background-color: #e2f0e2;
 }
 
 /* Styling for the first section */
@@ -33,8 +33,7 @@ body {
   margin-top: 50%;
   width: 100%;
   height: 100%;
-  background-color: #e2f0e2; /* Helles, gedecktes Waldgrün */
-  color: white !important; /* Ensure text in this section is white */
+  background-color: #e2f0e2;
 }
 
 /* Container styling */
@@ -47,12 +46,11 @@ body {
   align-items: center;
 }
 
-
 .name {
     font-size: 5vw;
     font-weight: bold;
     margin-bottom: 20px;
-    font-family: myfont;
+    font-family: "Fjalla One", sans-serif; /* Apply Fjalla One font */
     color: #d0e0d1;
     text-align: center;
 }
@@ -60,11 +58,11 @@ body {
 .title-container {
     position: relative;
     display: flex;
-    justify-content: center;  /* Zentriert die Titel horizontal */
-    align-items: center;      /* Stellt sicher, dass die Titel auf der gleichen Höhe sind */
+    justify-content: center;
+    align-items: center;
     height: 4em;
     margin-bottom: 20px;
-    font-family: myfont;
+    font-family: "Fjalla One", sans-serif; /* Apply Fjalla One font */
     color: #d0e0d1;
     text-align: center;
 }
@@ -75,8 +73,8 @@ body {
     transform: translateX(0);
     transition: all 1s ease-in-out;
     position: relative;
-    z-index: 1; /* Stellt sicher, dass Titel im Vordergrund bleiben */
-    margin: 0 10px; /* Abstand zwischen den beiden Titeln */
+    z-index: 1;
+    margin: 0 10px;
 }
 
 .title1 {
@@ -92,21 +90,19 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease-in-out;
-    font-family: myfont;
+    font-family: "Fjalla One", sans-serif; /* Apply Fjalla One font */
     font-weight: light;
-    color: #a3b9a4; /* Mittelhelles, gedecktes Grün */
+    color: #a3b9a4;
     text-align: center;
 }
 
 /* Navbar styling */
 .navbar-title {  
-  font-family: Sans-Serif;
-  color: white !important; /* Navbar title in white */
+  font-family: "Fjalla One", sans-serif; /* Apply Fjalla One font */
 }
 
 .navbar-dark .navbar-brand {
   text-align: right;
-  color: white !important; /* Navbar brand text in white */
 }
 
 .navbar-nav {
@@ -117,9 +113,8 @@ body {
 .navbar-nav .nav-item {
   padding-left: 10px;
   padding-right: 10px;
-  font-family: Georgia, serif;
+  font-family: "Fjalla One", sans-serif; /* Apply Fjalla One font */
   font-size: 20px;
-  color: white !important; /* Navbar items in white */
 }
 
 /* Footer styling */
@@ -128,51 +123,49 @@ body {
   text-align: center;
   position: fixed;
   bottom: 0;
-  font-family: Georgia, serif;
-  color: white !important; /* Footer text in white */
-  background-color: #e2f0e2; /* Hintergrundfarbe des Footers auf helles, gedecktes Waldgrün */
+  font-family: "Fjalla One", sans-serif; /* Apply Fjalla One font */
+  background-color: #e2f0e2;
 }
 
 .page-footer-title {
-  font-family: Sans-Serif;
-  color: white; /* Footer title in white */
+  font-family: "Fjalla One", sans-serif; /* Apply Fjalla One font */
 }
 
 /* Link styling */
 a:link {
-  color: #4a6e4f; /* Sehr helles, gedecktes Grün */
-  text-decoration: none; /* Entfernt die Standardunterstreichung */
+  color: #013220 !important;
+  text-decoration: none;
 }
 
 a:visited {
-  color: #a3b9a4; /* Mittelhelles, gedecktes Grün */
+  color: #013220;
 }
 
 a:hover {
-  color: #d0e0d1; /* Beibehaltung der Farbe beim Hover */
-  background-color: #4a6e4f; /* Setzt den Hintergrund beim Hover auf ein helles, gedecktes Grün */
-  text-decoration: underline; /* Optional: Unterstreicht den Link beim Hover */
+  color: #d0e0d1;
+  background-color: #4a6e4f;
+  text-decoration: underline;
 }
 
 a:active {
-  color: #d0e0d1; /* Setzt die Farbe beim Klicken auf sehr helles, gedecktes Grün */
-  background-color: #4a6e4f; /* Setzt den Hintergrund beim Klicken auf helles, gedecktes Waldgrün */
+  color: #d0e0d1;
+  background-color: #4a6e4f;
 }
 
 a:focus {
-  color: #d0e0d1 !important; /* Verhindert das Auftreten der blauen Farbe beim Klicken */
-  background-color: #4a6e4f !important; /* Gleicher Hintergrund wie beim aktiven Link */
+  color: #d0e0d1 !important;
+  background-color: #4a6e4f !important;
 }
 
 /* Active state for navbar items */
 .navbar-nav .nav-item.active, 
 .navbar-nav .nav-link.active {
-  color: #d0e0d1 !important; /* Textfarbe des aktiven Links auf sehr helles, gedecktes Grün */
-  background-color: #4a6e4f !important; /* Hintergrundfarbe des aktiven Links auf helles, gedecktes Waldgrün */
+  color: #d0e0d1 !important;
+  background-color: #4a6e4f !important;
 }
 
 /* Hover state for navbar items */
 .navbar-nav .nav-item:hover, 
 .navbar-nav .nav-link:hover {
-  color: #a3b9a4 !important; /* Setzt die Textfarbe beim Hover auf mittelhelles, gedecktes Grün */
+  color: #a3b9a4 !important;
 }

@@ -1,11 +1,19 @@
+---
+format: html
+page-layout: full
+---
+
+<style>
 @font-face {
   font-family: "myfont";
   src: url('gb.ttf') format('truetype'); /* Ensure the path and format are correct */
+  font-display: swap; /* Bessere Ladeleistung */
 }
 
 @font-face {
   font-family: "fraunces";
   src: url('fraunces.ttf') format('truetype'); /* Ensure the path and format are correct */
+  font-display: swap; /* Bessere Ladeleistung */
 }
 
 /* Apply a solid background color to the body */
@@ -34,7 +42,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #e2f0e2; /* Helles, gedecktes Waldgrün */
-  color: white !important; /* Ensure text in this section is white */
 }
 
 /* Container styling */
@@ -47,12 +54,11 @@ body {
   align-items: center;
 }
 
-
 .name {
     font-size: 5vw;
     font-weight: bold;
     margin-bottom: 20px;
-    font-family: myfont;
+    font-family: "myfont";
     color: #d0e0d1;
     text-align: center;
 }
@@ -64,7 +70,7 @@ body {
     align-items: center;      /* Stellt sicher, dass die Titel auf der gleichen Höhe sind */
     height: 4em;
     margin-bottom: 20px;
-    font-family: myfont;
+    font-family: "myfont";
     color: #d0e0d1;
     text-align: center;
 }
@@ -92,7 +98,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: all 1s ease-in-out;
-    font-family: myfont;
+    font-family: "myfont";
     font-weight: light;
     color: #a3b9a4; /* Mittelhelles, gedecktes Grün */
     text-align: center;
@@ -101,12 +107,10 @@ body {
 /* Navbar styling */
 .navbar-title {  
   font-family: Sans-Serif;
-  color: white !important; /* Navbar title in white */
 }
 
 .navbar-dark .navbar-brand {
   text-align: right;
-  color: white !important; /* Navbar brand text in white */
 }
 
 .navbar-nav {
@@ -119,7 +123,6 @@ body {
   padding-right: 10px;
   font-family: Georgia, serif;
   font-size: 20px;
-  color: white !important; /* Navbar items in white */
 }
 
 /* Footer styling */
@@ -129,34 +132,33 @@ body {
   position: fixed;
   bottom: 0;
   font-family: Georgia, serif;
-  color: white !important; /* Footer text in white */
   background-color: #e2f0e2; /* Hintergrundfarbe des Footers auf helles, gedecktes Waldgrün */
 }
 
 .page-footer-title {
   font-family: Sans-Serif;
-  color: white; /* Footer title in white */
+  
 }
 
 /* Link styling */
 a:link {
-  color: #4a6e4f; /* Sehr helles, gedecktes Grün */
+  color: #013220 !important; /* Dunkles Waldgrün für normale Links */
   text-decoration: none; /* Entfernt die Standardunterstreichung */
 }
 
 a:visited {
-  color: #a3b9a4; /* Mittelhelles, gedecktes Grün */
+  color: #013220; /* Dunkles Waldgrün für besuchte Links */
 }
 
 a:hover {
-  color: #d0e0d1; /* Beibehaltung der Farbe beim Hover */
-  background-color: #4a6e4f; /* Setzt den Hintergrund beim Hover auf ein helles, gedecktes Grün */
+  color: #d0e0d1; /* Helleres Grün beim Hover */
+  background-color: #4a6e4f; /* Dunkles Waldgrün als Hintergrund beim Hover */
   text-decoration: underline; /* Optional: Unterstreicht den Link beim Hover */
 }
 
 a:active {
   color: #d0e0d1; /* Setzt die Farbe beim Klicken auf sehr helles, gedecktes Grün */
-  background-color: #4a6e4f; /* Setzt den Hintergrund beim Klicken auf helles, gedecktes Waldgrün */
+  background-color: #4a6e4f; /* Dunkles Waldgrün als Hintergrund beim Klicken */
 }
 
 a:focus {
@@ -168,7 +170,7 @@ a:focus {
 .navbar-nav .nav-item.active, 
 .navbar-nav .nav-link.active {
   color: #d0e0d1 !important; /* Textfarbe des aktiven Links auf sehr helles, gedecktes Grün */
-  background-color: #4a6e4f !important; /* Hintergrundfarbe des aktiven Links auf helles, gedecktes Waldgrün */
+  background-color: #4a6e4f !important; /* Hintergrundfarbe des aktiven Links auf dunkles Waldgrün */
 }
 
 /* Hover state for navbar items */

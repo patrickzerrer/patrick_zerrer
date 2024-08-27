@@ -157,47 +157,60 @@ cookieconsent.run({
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4a6e4f; /* Hintergrundfarbe anpassen, falls benötigt */
+    background-color: #4a6e4f; /* Hintergrundfarbe */
     font-family: Georgia, sans-serif;
+    flex-direction: column; /* Erlaubt vertikales Anordnen der Elemente */
   }
 
   .center-text {
     text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    color: #f0faf0;
+    margin-bottom: 20px; /* Abstand zwischen den Bereichen */
   }
 
-  a {
-    color: #e2f0e2; /* Linkfarbe anpassen */
-    text-decoration: none; /* Entfernen der Unterstreichung */
+  a:link {
+    color: #f0faf0 !important; /* Dunkles Waldgrün für normale Links */
+    text-decoration: none; /* Entfernt die Standardunterstreichung */
+  }
+  
+  a:visited {
+  color: #f0faf0; /* Dunkles Waldgrün für besuchte Links */
   }
 
   a:hover {
     text-decoration: underline; /* Unterstreichung beim Hover */
   }
+
   .navbar {
-    background-color: #4a6e4f !important; /* Hintergrundfarbe für die Navbar */
-    color: #e2f0e2 !important; /* Schriftfarbe für die Navbar */
+    background-color: #4a6e4f !important;
+    color: #f0faf0 !important;
   }
-  
+
   .footer {
     width: 100%;
     text-align: center;
     position: fixed;
     bottom: 0;
     font-family: Georgia, serif;
-    background-color: #4a6e4f !important; /* Hintergrundfarbe für den Footer */
-    color: #e2f0e2 !important; /* Schriftfarbe für den Footer */
+    background-color: #4a6e4f !important;
+    color: #f0faf0 !important;
   }
-  
-  /* Optionale Anpassungen für Links innerhalb der Navbar und Footer */
+
   .navbar a, .footer a {
-  color: #e2f0e2 !important; /* Schriftfarbe für Links */
+    color: #f0faf0 !important;
+  }
+
+  .navbar a:hover, .footer a:hover {
+    color: #d1e5d1 !important;
   }
   
-  .navbar a:hover, .footer a:hover {
-  color: #d1e5d1 !important; /* Schriftfarbe beim Hover */
+  /* Neue Klasse für das Impressum */
+  .impressum {
+    margin-top: 200px; /* Abstand oben */
+    font-size: 20px;
+    font-weight: normal;
   }
 </style>
 <div class="center-text">
@@ -212,6 +225,17 @@ Contact me
 </p>
 <p>
 <strong>University Website:</strong> <a href="https://zemki.uni-bremen.de/person/patrick-zerrer/" target="_blank">Uni Bremen - ZeMKI</a>
+</p>
+</div>
+<div class="impressum center-text">
+<h1>
+Impressum
+</h1>
+<p>
+Patrick Zerrer<br> Linzer Strasse 4<br> 28359 Bremen<br> Deutschland
+</p>
+<p>
+<strong>E-Mail:</strong> pzerrer[at]uni-bremen.de
 </p>
 </div>
 
@@ -454,7 +478,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright 2024</div>   
+    <div class="nav-footer-left">© 2024 Patrick Zerrer. Alle Rechte vorbehalten.</div>   
     <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">

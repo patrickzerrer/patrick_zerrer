@@ -29,7 +29,7 @@ website:
   page-footer: 
     background: "transparent"
     foreground: "#a3b9a4"
-    left: "Copyright 2024" 
+    left:  "&copy; 2024 Patrick Zerrer. Alle Rechte vorbehalten."
     right: 
       - icon: linkedin
         href: https://linkedin.com/in/patrick-zerrer-205b422a7

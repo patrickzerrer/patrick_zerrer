@@ -102,7 +102,7 @@ embed-resources: true
 
   .navbar {
     background-color: #4a6e4f !important;
-    color: #e2f0e2 !important;
+    color: #f0faf0 !important;
   }
 
   .footer {
@@ -112,11 +112,11 @@ embed-resources: true
     bottom: 0;
     font-family: Georgia, serif;
     background-color: #4a6e4f !important;
-    color: #e2f0e2 !important;
+    color: #f0faf0 !important;
   }
 
   .navbar a, .footer a {
-    color: #e2f0e2 !important;
+    color: #f0faf0 !important;
   }
 
   .navbar a:hover, .footer a:hover {
