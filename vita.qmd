@@ -12,7 +12,7 @@ about:
   image-shape: round
 ---
 
-## Vita
+## About me
 
 I have been working as a research assistant at the Centre for Media, Communication and Information Research [(ZeMKI)](https://zemki.uni-bremen.de/) at the University of Bremen since April 2020. In the Laboratory for Digital Communication and Information Diversity under the direction of Prof. Dr Cornelius Puschmann, I am dedicated to the systematic investigation of digital media use using quantitative and automated methods (CSS, R, scraping, mobile tracking, etc.).
 
