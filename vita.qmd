@@ -5,7 +5,7 @@ format:
     link-external-newwindow: true
     css: styles.css
 embed-resources: true
-image: bilder/bild_patrick.png
+image: bilder/bild_patrick.jpg
 about:
   template: trestles
   image-width: 20em
@@ -34,3 +34,6 @@ October 2017 until February 2020 \
 September 2013 until September 2017 \
 **University of Passau** \
 *Study programme in the field of Governance and Public Policy - Political Science, Bachelor of Arts degree* \
+
+---
+Copyright Picture; 2024 Julia Metz.
