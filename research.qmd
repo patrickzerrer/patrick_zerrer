@@ -36,7 +36,7 @@ I have been involved in a number of research projects, including...
 
 - Design and implementation of an online survey (seminar)
 
-- Collaboration in the redesign of the teaching module and publication of the online textbook [“Introduction to quantitative research designs and data analysis”](https://patrickzerrer.github.io/R_Hands_on_Book/) as part of the SKILL project
+- Collaboration in the redesign of the teaching module and publication of the online textbook [“Introduction to quantitative research designs and data analysis”](https://pzerrer.pages.git.zmml.uni-bremen.de/einfuehrung_datenanalyse_in_r/) as part of the SKILL project
 
 ## Publications
 
