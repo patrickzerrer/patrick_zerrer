@@ -63,8 +63,7 @@ library(klaus)
 library(ggplot2)
 library(ggstream)
 ```
-
-### Data collection
+**Data collection**
 ```{r, eval=FALSE}
 use_condaenv("snake1", required = TRUE)  
 
@@ -211,7 +210,7 @@ df_videos = df_videos %>%
 
 saveRDS(df_videos, file = "yt_rogan.rds")
 ```
-### YT Metrics
+**YouTube Metrics**
 
 ```{r, eval=FALSE}
 df_videos = readRDS(file = "yt_rogan.rds")
@@ -291,8 +290,7 @@ plot_metrics
 
 ggsave("joe_rogan_metrics.png", plot_metrics, width = 20, height = 15, units = "cm")
 ```
-
-### Topics
+**Topics**
 ```{r, eval=FALSE}
 yt_videos = readRDS(file = "yt_rogan.rds")
 
@@ -638,7 +636,7 @@ ggplot_topics
 ggsave("joe_rogan_topics.png", ggplot_topics, width = 20, height = 15, units = "cm")
 ```
 
-### Stance towards canidates
+**Stance towards candidates**
 
 ```{r, eval=FALSE}
 general_instructions = "You are a highly accurate and consistent text classification model that specializes in analyzing chunks of English-language Podcasts transcripts. Your task is to classify stances in a sample of Podcasts transcripts. You must strictly follow the classification rules without deviation. Do not return any additional information outside the classification scheme. Use JSON."
