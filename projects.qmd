@@ -886,11 +886,16 @@ leaflet() %>%
 
 
 ### Android App Logs
-Together with colleagues from Gesis, I have published a tutorial on the social science processing and analysis of Android app logging data. Android app logs can provide data for social science analysis on the duration of app usage as well as (in some cases) interactions with these apps, such as via push notifications or shares. However, processing the raw data involves a number of minor and major challenges, which we address in this tutorial. Have fun working through it or scrolling through it.
-
-[Tutorial](https://methodshub.gesis.org/library/tutorials/How-to-work-with-Android-App-Logging-Data/1/) & [GitHub](https://github.com/patrickzerrer/How-to-work-with-Android-App-Logging-Data)
+Together with colleagues from Gesis, I have published a [tutorial](https://methodshub.gesis.org/library/tutorials/How-to-work-with-Android-App-Logging-Data/1/) on the social science processing and analysis of Android app logging data. Android app logs can provide data for social science analysis on the duration of app usage as well as (in some cases) interactions with these apps, such as via push notifications or shares. However, processing the raw data involves a number of minor and major challenges, which we address in this tutorial. Have fun working or scrolling through it.
 
 ![Screenshot Tutorial](bilder/screenshot_tutorial.png)
+
+::: {.callout-tip collapse="true"}
+## R-Code
+
+Feel free to visit the GitHub Repository [GitHub](https://github.com/patrickzerrer/How-to-work-with-Android-App-Logging-Data) for the R-Code.
+
+:::
 
 **Note:** This page is still a work in progress. I will add more data science projects in the future.
 
